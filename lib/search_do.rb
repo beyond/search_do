@@ -296,10 +296,12 @@ module SearchDo
 
     def add_to_index #:nodoc:
       search_backend.add_to_index(search_texts, search_attrs)
+      true
     end
 
     def remove_from_index #:nodoc:
       search_backend.remove_from_index(self.id)
+      true
     end
 
     private
